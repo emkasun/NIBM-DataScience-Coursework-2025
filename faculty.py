@@ -1,3 +1,6 @@
+from person import Person
+
+
 class Faculty(Person):
     def __init__(self, name, age, email, faculty_id):
         super().__init__(name, age, email)

@@ -37,3 +37,29 @@ ml.enroll_student(grad_student)  # now should work
 # Faculty responsibilities
 for f in [prof, lecturer, ta]:
     print(f"{f.name} responsibilities: {f.get_responsibilities()} - {f.calculate_workload()}")
+
+
+from student import SecureStudentRecord
+
+# Secure record test
+record = SecureStudentRecord("S1001", gpa=3.2)
+
+print(record)  # prints student record
+print("Student ID:", record.get_student_id())
+print("Initial GPA:", record.get_gpa())
+
+# Update GPA
+record.set_gpa(3.9)
+print("Updated GPA:", record.get_gpa())
+
+# Course enrollment with validation
+record.enroll_course("Algorithms")
+record.enroll_course("Machine Learning")
+record.enroll_course("Databases")
+record.enroll_course("Statistics")
+record.enroll_course("AI")
+record.enroll_course("Deep Learning")  # should fail (limit reached)
+
+# Drop a course
+record.drop_course("Statistics")
+print("Courses after drop:", record.get_courses())
