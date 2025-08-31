@@ -1,5 +1,5 @@
 NIBM MSc Data Science – Coursework 2025
-Overview
+Overview - 
 
 This repository contains my coursework for the module Programming for Data Science (NIBM), MSc Data Science (Coventry University, UK).
 
@@ -19,7 +19,7 @@ project/
 │   ├── student.py
 │   ├── faculty.py
 │   └── department.py
-│
+
 
 
 ├── question2_ecommerce_analysis/
@@ -27,7 +27,7 @@ project/
 │   ├── data_processing/
 │   ├── analysis/
 │   └── visualizations/
-│
+
 
 
 ├── question3_ethics_report/
