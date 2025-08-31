@@ -1,0 +1,18 @@
+# Core language
+python==3.10
+
+# Web scraping
+requests
+beautifulsoup4
+
+# Data manipulation
+pandas
+numpy
+
+# Visualization
+matplotlib
+seaborn
+plotly
+
+# Machine learning (for regression)
+scikit-learn
